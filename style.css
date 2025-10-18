@@ -115,7 +115,6 @@ body {
   position: relative;
   z-index: 1;
   flex-wrap: wrap;
-  gap:30px;
 }
 .nav-list {
   list-style: none;
@@ -156,18 +155,29 @@ body {
 .dropdown:hover .dropdown-menu{
     display: block;
 }
-
+/* humburger icon style */
+  a.icon {
+  background: rgba(0, 0, 0, 0);
+  display: none;
+  position: absolute;
+  right: 15px;
+  font-weight: 100;
+  color: white;
+  top: 20px;
+  font-size: 30px;
+}
 /* Responsive Navbar */
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
+
   .navbar {
     flex-direction: column;
     align-items: stretch;
-    padding: 8px 0;
+    padding: 8px 0px;
   }
-  .nav-list {
+  .nav-list{
     flex-direction: column;
     align-items: stretch;
-    gap: 0;
+    display: none;
   }
   .nav-list a {
     padding: 12px 16px;
@@ -179,20 +189,28 @@ body {
     min-width: 100%;
     box-shadow: none;
   }
-}
-@media (max-width: 600px) {
-  .navbar {
-    padding: 4px 0;
+  li .btn1{
+    margin:  5px 15px;
+
   }
-  .nav-list a {
-    font-size: 0.95rem;
-    padding: 10px 10px;
-  }
+  /* hamburger icon style */
+  a.icon {
+  background: rgba(0, 0, 0, 0);
+  display: block;
+  position: absolute;
+  right: 15px;
+  font-weight: 100;
+  color: white;
+  top: 20px;
+  font-size: 30px;
 }
+}
+
 /* logo style */
 .logo {
   display: flex;
   padding: 5px;
+  margin-right: 5%;
 }
 .logo img {
   width: 50px;
@@ -201,11 +219,7 @@ body {
   box-shadow: 1px 1px 20px rgb(255, 255, 255);
   border: 2px solid rgb(255, 255, 255);
 }
-/* log in and sign up button  */
-.div-btn{
-  display: flex;
-  gap: 20px;
-}
+
 .btn {
   display: inline-block;
   padding: 6px 15px;
