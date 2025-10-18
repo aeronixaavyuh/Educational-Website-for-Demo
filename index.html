@@ -5,9 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aeronix Aavyuh</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
-    <header>   
+    <script>
+      function myFunction() {
+        var elements = document.querySelectorAll(".nav-list, .div-btn");
+        elements.forEach((el) => {
+          if (el.style.display === "block") {
+            el.style.display = "none";
+          } else {
+            el.style.display = "block";
+          }
+        });
+      }
+    </script>
+    <header>
       <nav class="navbar">
         <div class="logo">
           <img src="pic\Untitled design.png" width="50" height="50" />
@@ -15,7 +31,7 @@
         <div>
           <ul class="nav-list">
             <li><a href="#">Home</a></li>
-            <li class="dropdown"> 
+            <li class="dropdown">
               <a href="#">Syllabus ▾</a>
               <ul class="dropdown-menu">
                 <li><a href="#">Electrical Engineering</a></li>
@@ -36,9 +52,7 @@
             </li>
 
             <li class="dropdown">
-              <a href="#">
-                Result
-              </a>
+              <a href="#"> Result </a>
               <!-- <ul class="dropdown-menu">
                 <li><a href="#">Electrical Engineering</a></li>
                 <li><a href="#">Mechanical Engineering</a></li>
@@ -62,26 +76,32 @@
             </li>
             <li><a href="#">Contact</a></li>
             <li><a href="#">About</a></li>
+            <li> <button type="button" class="btn btn1">Log In</button></li>
+            <li><button type="button" class="btn btn1">Sign Up</button></li>
           </ul>
         </div>
-        <div class="div-btn">
-          <button type="button" class="btn login-btn">Log In</button>
-          <button type="button" class="btn signup-btn">Sign Up</button>
-        </div>
+  
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <!-- hamburger icon -->
+          <i class="fa fa-bars"></i>
+        </a>
       </nav>
     </header>
 
     <!-- welocome to Aeronix Aavyuh -->
     <div class="wel-div">
       <div class="welcome-div">
-       <h1>Welcome to Aeronix Aavyuh</h1>
-<p>
-Aeronix Aavyuh is a platform for Polytechnic students. 
-Find notes, video tutorials, model papers, and quizzes to make learning easier. 
-Contact: <a href="mailto:aeronixaavyuh@gmail.com">aeronixaavyuh@gmail.com</a>.
-</p>
-<p><strong>Note:</strong> This is a demo website; content is for illustration only.</p>
-
+        <h1>Welcome to Maverick Minds</h1>
+        <p>
+          Maverick Minds is a platform for Polytechnic students. Find notes,
+          video tutorials, model papers, and quizzes to make learning easier.
+          Contact:
+          <a href="mailto:aeronixaavyuh@gmail.com">aeronixaavyuh@gmail.com</a>.
+        </p>
+        <p>
+          <strong>Note:</strong> This is a demo website; content is for
+          illustration only.
+        </p>
 
         <a href="#" class="btn universal-btn">Explore Now</a>
       </div>
@@ -428,9 +448,7 @@ Contact: <a href="mailto:aeronixaavyuh@gmail.com">aeronixaavyuh@gmail.com</a>.
 
         <p>
           Email:
-          <a href="mailto:aeronixaavyuh@gmail.com"
-            >aeronixaavyuh@gmail.com</a
-          >
+          <a href="mailto:aeronixaavyuh@gmail.com">aeronixaavyuh@gmail.com</a>
         </p>
         <br />
         <p>Tel:<a href="tel:+987654321"> +91987654321</a></p>
@@ -537,10 +555,7 @@ Contact: <a href="mailto:aeronixaavyuh@gmail.com">aeronixaavyuh@gmail.com</a>.
               <h4 class="footer-heading-text">Contact</h4>
               <ul class="footer-ul">
                 <li>
-                  <a
-                    href="mailto:aeronixaavyuh@gmail.com"
-                    class="footer-li"
-                  >
+                  <a href="mailto:aeronixaavyuh@gmail.com" class="footer-li">
                     Email: aeronixaavyuh@gmail.com
                   </a>
                 </li>
@@ -647,7 +662,5 @@ Contact: <a href="mailto:aeronixaavyuh@gmail.com">aeronixaavyuh@gmail.com</a>.
         </script>
       </div>
     </footer>
-    
   </body>
 </html>
-
